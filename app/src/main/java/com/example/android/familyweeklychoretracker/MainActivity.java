@@ -18,12 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // TODO I don't think I actually need this so remember to remove
-        //mDbHelper = new ChoreDbHelper(this);
     }
-
-    //TODO do I need onStart method?
 
     private void createChoreCursor () {
         //instantiate subclass of SQLiteOpenHelper and pass context
