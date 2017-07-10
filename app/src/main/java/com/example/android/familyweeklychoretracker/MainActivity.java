@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    private void createChoreCursor () {
+    private Cursor createChoreCursor() {
         //instantiate subclass of SQLiteOpenHelper and pass context
         ChoreDbHelper mDbHelper = new ChoreDbHelper(this);
 
@@ -45,10 +45,11 @@ public class MainActivity extends AppCompatActivity {
                 null);
 
         cursor.close();
-        }
+        return cursor;
+    }
 
     //insert method
-    private void insertChore () {
+    private void insertChore() {
         //Get database in write more
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
 

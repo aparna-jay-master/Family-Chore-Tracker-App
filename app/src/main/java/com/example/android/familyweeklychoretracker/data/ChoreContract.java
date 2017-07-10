@@ -16,7 +16,7 @@ public class ChoreContract {
         //Columns
         public static final String _ID = BaseColumns._ID;
         public static final String COLUMN_NAME = "name";
-        public static final String COLUMN_WEEK = "day of week";
+        public static final String COLUMN_WEEK = "day_of_week";
         public static final String COLUMN_CHORE_DONE = "chore";
 
         //Possible values for day of week
